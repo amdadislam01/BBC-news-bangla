@@ -18,7 +18,7 @@ This project is a simple news feed application built using JavaScript, displayin
 
 ## 🖥️ Screenshots
 
-![TODO: Add Screenshot 1](path-to-screenshot1)
+![TODO: Add Screenshot 1](https://ik.imagekit.io/yqnbhdlo4/Img/bbbc-new?updatedAt=1757047615414)
 
 ![TODO: Add Screenshot 2](path-to-screenshot2)
 
