@@ -48,6 +48,39 @@
         ></ul>
       </nav>
     </header>
+    <!-- Sinnepar News Bookmak -->
+    <main
+      class="max-w-7xl mx-auto px-5 mt-5 grid grid-cols-1 lg:grid-cols-4 gap-5"
+    >
+      <!-- Spinner -->
+      <div
+        id="spinner"
+        class="hidden col-span-4 flex justify-center items-center mt-5"
+      >
+        <div
+          class="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"
+        ></div>
+      </div>
+
+      <!-- News -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:col-span-3"
+        id="news-container"
+      ></div>
+
+      <!-- Bookmark -->
+      <div
+        class="col-span-1 border border-gray-300 rounded-lg overflow-hidden lg:sticky lg:top-5"
+      >
+        <div
+          class="bg-red-500 text-white p-3 flex justify-between items-center"
+        >
+          <h1 class="text-lg font-semibold">Bookmark</h1>
+          <span id="bookmark-count" class="text-lg font-bold">0</span>
+        </div>
+        <div id="bookmark" class="p-3"></div>
+      </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
