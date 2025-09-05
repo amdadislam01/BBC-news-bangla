@@ -27,7 +27,7 @@ This project is a simple news feed application built using JavaScript, displayin
 
 **Frontend:**
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,javascript" alt="Tech Stack" width="240"/>
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,netlify" alt="Tech Stack" width="320"/>
 </p>
 
 
