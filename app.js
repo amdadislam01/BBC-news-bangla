@@ -7,6 +7,14 @@ const bookmarkCount = document.getElementById('bookmark-count')
 const spinner = document.getElementById('spinner')   
 const alertModal = document.getElementById('alertModal')  
 
+
+// ========== Modal Elements ==========
+const detailsModal = document.getElementById('detailsModal')              
+const detailsTitle = document.getElementById('details-title')             
+const detailsImage = document.getElementById('details-image')             
+const detailsTime = document.getElementById('details-time')               
+const detailsDescription = document.getElementById('details-description')  
+
 // ========= Data Storage =========
 let bookmarks = []      
 let allArticles = []     
@@ -159,6 +167,20 @@ const handleDeleteBookmarks = (bookmarkId) => {
 // =======================
 const updateBookmarkCount = () => {
   bookmarkCount.innerText = bookmarks.length   
+}
+
+// =======================
+// View Details (Modal)
+// =======================
+const handleViewDetails = (id) => {
+  const article = allArticles.find(a => a.id === id)   
+  if (article) {
+    detailsTitle.innerText = article.title
+    detailsImage.src = article.image?.srcset[8]?.url || ""
+    detailsTime.innerText = article.time || ""
+    detailsDescription.innerText = article.description || "No description available."
+    detailsModal.showModal()    
+  }
 }
 
 
