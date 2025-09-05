@@ -5,7 +5,7 @@ const categorieContainer = document.getElementById('category-container')
 const newsContainer = document.getElementById('news-container')           
 const bookmarkCount = document.getElementById('bookmark-count')           
 const spinner = document.getElementById('spinner')   
-
+const alertModal = document.getElementById('alertModal')  
 
 // ========= Data Storage =========
 let bookmarks = []      
@@ -143,6 +143,22 @@ const showBookmarks = () => {
   })
 
   updateBookmarkCount()   
+}
+
+// =======================
+// Delete Bookmark
+// =======================
+const handleDeleteBookmarks = (bookmarkId) => {
+  bookmarks = bookmarks.filter(bookmark => bookmark.id !== bookmarkId)   
+  showBookmarks()                                                       
+}
+
+
+// =======================
+// Update Bookmark Count
+// =======================
+const updateBookmarkCount = () => {
+  bookmarkCount.innerText = bookmarks.length   
 }
 
 
