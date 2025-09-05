@@ -1,5 +1,7 @@
 #  BBC News Bangla
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://bbc-news-01.netlify.app/)  
+
 ## 📖 Overview
 
 This project is a simple news feed application built using JavaScript, displaying news content sourced from BBC Bangla.  The application is designed for ease of use and provides a clean interface for browsing news articles.  It is deployed using Netlify.
